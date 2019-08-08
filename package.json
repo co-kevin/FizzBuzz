@@ -1,0 +1,10 @@
+{
+  "name": "FizzBuzz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Hooks Zhang",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
