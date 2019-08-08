@@ -1,23 +1,10 @@
 for (let i = 1; i <=100; i++) {
-  if (fizzBuzz(i)) {
-    console.log('FizzBuzz')
-  } else if (isFizz(i)) {
-    console.log('Fizz')
-  } else if (isBuzz(i)) {
-    console.log('Buzz')
-  } else {
-    console.log(i)
-  }
+  console.log(of(i))
 }
 
-function fizzBuzz (num) {
-  return isFizz(num) && isBuzz(num)
-}
-
-function isFizz (num) {
-  return num % 3 === 0
-}
-
-function isBuzz (num) {
-  return num % 5 === 0
+function of (num) {
+  if (num % 15 === 0) return 'FizzBuzz'
+  if (num % 5 === 0) return 'Buzz'
+  if (num % 3 === 0) return 'Fizz'
+  return num
 }
