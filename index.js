@@ -1,12 +1,8 @@
-for (let i = 1; i <=100; i++) {
-  console.log(of(i))
+function say(number) {
+  if (number % 15 === 0) return 'FizzBuzz'
+  if (number % 3 === 0) return 'Fizz'
+  if (number % 5 === 0) return 'Buzz'
+  return number
 }
 
-function of (num) {
-  if (num % 15 === 0) return 'FizzBuzz'
-  if (num % 5 === 0) return 'Buzz'
-  if (num % 3 === 0) return 'Fizz'
-  return num
-}
-
-export { of }
+export { say }
